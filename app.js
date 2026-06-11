@@ -129,9 +129,20 @@ document.addEventListener("DOMContentLoaded", () => {
     loadCatalogData(false); // Silent load from localStorage if available
     updateCacheSizeDisplay();
     
-    // Register PWA service worker if supported
+    // Register PWA service worker if supported and handle auto-update reload
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').catch(err => {
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (!refreshing) {
+                refreshing = true;
+                window.location.reload();
+            }
+        });
+
+        navigator.serviceWorker.register('sw.js').then(reg => {
+            // Force check for updates on page load
+            reg.update();
+        }).catch(err => {
             console.log("Service Worker registration failed: ", err);
         });
     }
@@ -1261,7 +1272,7 @@ async function processCDImport() {
         try {
             const jsonGetRes = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/meus_cds.json`, {
                 headers: {
-                    "Authorization": `token ${token}`,
+                    "Authorization": `Bearer ${token}`,
                     "Accept": "application/vnd.github.v3+json"
                 }
             });
@@ -1339,7 +1350,7 @@ async function uploadFileToGitHub(path, base64Content, commitMessage, sha = null
         try {
             const checkRes = await fetch(url, {
                 headers: {
-                    "Authorization": `token ${token}`,
+                    "Authorization": `Bearer ${token}`,
                     "Accept": "application/vnd.github.v3+json"
                 }
             });
@@ -1364,7 +1375,7 @@ async function uploadFileToGitHub(path, base64Content, commitMessage, sha = null
     const response = await fetch(url, {
         method: "PUT",
         headers: {
-            "Authorization": `token ${token}`,
+            "Authorization": `Bearer ${token}`,
             "Content-Type": "application/json",
             "Accept": "application/vnd.github.v3+json"
         },
@@ -1571,7 +1582,7 @@ async function pushCatalogToGitHub(remoteCatalog) {
     try {
         const jsonGetRes = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/meus_cds.json`, {
             headers: {
-                "Authorization": `token ${token}`,
+                "Authorization": `Bearer ${token}`,
                 "Accept": "application/vnd.github.v3+json"
             }
         });

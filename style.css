@@ -79,7 +79,7 @@ body {
 .sidebar {
     background-color: var(--color-bg-sidebar);
     width: 320px;
-    height: 100%;
+    height: calc(100% - 90px);
     border-right: 1px solid var(--color-border);
     display: flex;
     flex-direction: column;
