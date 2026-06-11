@@ -84,6 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
 .sidebar-header {
@@ -228,6 +229,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    flex-shrink: 0;
 }
 
 .footer-actions {

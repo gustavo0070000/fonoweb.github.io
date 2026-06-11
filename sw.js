@@ -1,6 +1,6 @@
 // FonoPlayer PWA Service Worker for Offline App Shell Caching
 
-const CACHE_NAME = "fonoplayer-static-v1.5";
+const CACHE_NAME = "fonoplayer-static-v1.6";
 const STATIC_ASSETS = [
     "./",
     "./index.html",
