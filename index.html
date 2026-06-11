@@ -19,8 +19,14 @@
 <body>
     <div class="app-container">
         
+        <!-- Mobile Header (Visible on mobile viewports only) -->
+        <div class="mobile-header">
+            <button class="btn-menu-toggle" id="btnMenuToggle" title="Menu">☰</button>
+            <span class="mobile-logo-text">FonoPlayer</span>
+        </div>
+        
         <!-- Sidebar (Left Pane) -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="logo-container">
                     <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -34,7 +40,11 @@
             </div>
             
             <nav class="sidebar-nav">
-                <span class="nav-title">CDs / LIVROS DISPONÍVEIS</span>
+                <div class="sidebar-search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="search" id="sidebarSearch" placeholder="Pesquisar CDs ou pastas...">
+                </div>
+                <span class="nav-title">CDS / LIVROS DISPONÍVEIS</span>
                 <div class="cd-list-container" id="cdList">
                     <!-- CDs dynamically loaded here -->
                     <div class="loading-placeholder">Carregando catálogo...</div>

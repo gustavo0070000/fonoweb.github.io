@@ -28,6 +28,9 @@ const audioEl = document.getElementById("audioElement");
 const cdListEl = document.getElementById("cdList");
 const cdDetailsSection = document.getElementById("cdDetailsSection");
 const emptyStateSection = document.getElementById("emptyStateSection");
+const sidebarEl = document.getElementById("sidebar");
+const sidebarSearchEl = document.getElementById("sidebarSearch");
+const btnMenuToggleEl = document.getElementById("btnMenuToggle");
 
 // Details Header
 const cdTitleEl = document.getElementById("cdTitle");
@@ -297,6 +300,20 @@ function initializeUIEvents() {
         }
     });
 
+    // Search input handler
+    if (sidebarSearchEl) {
+        sidebarSearchEl.addEventListener("input", (e) => {
+            rebuildCDSidebar(e.target.value);
+        });
+    }
+
+    // Mobile menu toggle handler
+    if (btnMenuToggleEl && sidebarEl) {
+        btnMenuToggleEl.addEventListener("click", () => {
+            sidebarEl.classList.toggle("open");
+        });
+    }
+
     // Modal Visibility Handlers
     btnOpenSettings.addEventListener("click", () => {
         loadSettings();
@@ -479,7 +496,7 @@ function setCategoryCollapsed(category, isCollapsed) {
 }
 
 // Rebuild CD cards list in left sidebar
-function rebuildCDSidebar() {
+function rebuildCDSidebar(searchQuery = "") {
     if (!cdsData || !cdsData.cds) {
         cdListEl.innerHTML = '<div class="loading-placeholder">Nenhum CD disponível.</div>';
         return;
@@ -487,13 +504,29 @@ function rebuildCDSidebar() {
     
     cdListEl.innerHTML = "";
     
-    // Check if we have categories
-    const hasCategories = cdsData.cds.some(cd => cd.category && cd.category.trim() !== "");
+    const query = searchQuery.toLowerCase().trim();
+    
+    // Filter CDs if query is provided
+    let filteredCds = cdsData.cds;
+    if (query) {
+        filteredCds = cdsData.cds.filter(cd => 
+            cd.title.toLowerCase().includes(query) || 
+            (cd.category && cd.category.toLowerCase().includes(query))
+        );
+    }
+    
+    if (filteredCds.length === 0) {
+        cdListEl.innerHTML = '<div class="loading-placeholder">Nenhum CD ou pasta encontrado.</div>';
+        return;
+    }
+    
+    // Check if we have categories in the filtered list
+    const hasCategories = filteredCds.some(cd => cd.category && cd.category.trim() !== "");
     
     if (hasCategories) {
         // Group by category
         const groups = {};
-        cdsData.cds.forEach(cd => {
+        filteredCds.forEach(cd => {
             const cat = (cd.category && cd.category.trim() !== "") ? cd.category.trim() : "Geral";
             if (!groups[cat]) groups[cat] = [];
             groups[cat].push(cd);
@@ -511,7 +544,9 @@ function rebuildCDSidebar() {
         sortedCats.forEach(catName => {
             const folderDiv = document.createElement("div");
             folderDiv.className = "category-folder";
-            const isCollapsed = collapsedMap[catName] === true;
+            
+            // If searching, force-expand all matching folders for better visibility
+            const isCollapsed = query ? false : (collapsedMap[catName] === true);
             if (isCollapsed) {
                 folderDiv.classList.add("collapsed");
             }
@@ -551,15 +586,20 @@ function rebuildCDSidebar() {
         });
     } else {
         // Just list them directly
-        cdsData.cds.forEach(cd => {
+        filteredCds.forEach(cd => {
             const cdItem = createCDNavItem(cd);
             cdListEl.appendChild(cdItem);
         });
     }
     
-    // Auto-select first CD if nothing is selected yet
-    if (!selectedCdId && cdsData.cds.length > 0) {
-        selectCD(cdsData.cds[0].id);
+    // Auto-select first matching CD if current selection is not in filtered list
+    if (filteredCds.length > 0) {
+        const selectedStillExists = filteredCds.some(c => c.id === selectedCdId);
+        if (!selectedStillExists) {
+            if (!selectedCdId) {
+                selectCD(filteredCds[0].id);
+            }
+        }
     }
 }
 
@@ -578,20 +618,23 @@ function createCDNavItem(cd) {
     thumbDiv.className = "cd-nav-thumbnail";
     if (!cd.cover_url) {
         thumbDiv.className += " placeholder-art";
-        const hole = document.createElement("div");
-        hole.className = "center-hole";
-        thumbDiv.appendChild(hole);
     } else {
         const img = document.createElement("img");
         img.src = cd.cover_url;
         img.alt = cd.title;
         // Handle loading error by falling back to placeholder
         img.onerror = () => {
-            thumbDiv.innerHTML = '<div class="center-hole"></div>';
             thumbDiv.className = "cd-nav-thumbnail placeholder-art";
+            const imgEl = thumbDiv.querySelector("img");
+            if (imgEl) imgEl.remove();
         };
         thumbDiv.appendChild(img);
     }
+    
+    // Always append the center hole to represent a CD
+    const hole = document.createElement("div");
+    hole.className = "center-hole";
+    thumbDiv.appendChild(hole);
     
     // Meta details
     const infoDiv = document.createElement("div");
@@ -650,19 +693,26 @@ async function selectCD(cdId) {
         img.src = cd.cover_url;
         img.alt = cd.title;
         img.onerror = () => {
-            cdMainCoverEl.innerHTML = '<div class="center-hole-large"></div>';
-            appendCoverOverlay();
+            const imgEl = cdMainCoverEl.querySelector("img");
+            if (imgEl) imgEl.remove();
         };
         cdMainCoverEl.appendChild(img);
-    } else {
-        const hole = document.createElement("div");
-        hole.className = "center-hole-large";
-        cdMainCoverEl.appendChild(hole);
     }
+    
+    // Always append the large center hole to represent a CD
+    const hole = document.createElement("div");
+    hole.className = "center-hole-large";
+    cdMainCoverEl.appendChild(hole);
+    
     appendCoverOverlay();
     
     // Check local Cache Storage to dynamically show which tracks are downloaded
     renderCDTracksList(cd);
+    
+    // Automatically close the mobile menu drawer on selection
+    if (sidebarEl) {
+        sidebarEl.classList.remove("open");
+    }
 }
 
 function appendCoverOverlay() {
