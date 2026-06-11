@@ -1328,7 +1328,7 @@
         },
         {
             "id": "escuta_o_1",
-            "title": "Escuta O 1",
+            "title": "Escutação 1",
             "description": "Exercícios e faixas de áudio do CD Escuta O 1.",
             "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escuta_o_1/cover.webp?t=1781219411527",
             "tracks": [
@@ -1602,7 +1602,8 @@
                     "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/45 Track45.wav",
                     "duration": "02:33"
                 }
-            ]
+            ],
+            "category": "Teste"
         },
         {
             "id": "escutacao_2",
