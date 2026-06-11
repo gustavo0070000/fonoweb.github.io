@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FonoPlayer - Tocador de CDs Fonoaudiológicos</title>
+    
+    <!-- PWA Manifest & Service Worker Hook -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#10B981">
+    
+    <!-- Google Fonts: Outfit for titles, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- Sidebar (Left Pane) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                    <span class="logo-text">FonoPlayer</span>
+                </div>
+                <span class="logo-subtext">Consultório de Fonoaudiologia</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <span class="nav-title">CDs / LIVROS DISPONÍVEIS</span>
+                <div class="cd-list-container" id="cdList">
+                    <!-- CDs dynamically loaded here -->
+                    <div class="loading-placeholder">Carregando catálogo...</div>
+                </div>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <button class="btn btn-primary btn-block" id="btnOpenImport">
+                    <span class="icon">➕</span> Importar Novo CD
+                </button>
+                <div class="footer-actions">
+                    <button class="btn btn-secondary" id="btnSync">
+                        <span class="icon">🔄</span> Sincronizar
+                    </button>
+                    <button class="btn btn-secondary" id="btnOpenSettings">
+                        <span class="icon">⚙️</span> Ajustes
+                    </button>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content Area (Center Pane) -->
+        <main class="main-content">
+            <div class="cd-details-container" id="cdDetailsSection" style="display: none;">
+                <!-- CD Header Details Card -->
+                <header class="cd-header">
+                    <div class="cd-cover-wrapper" id="cdMainCover">
+                        <!-- Cover Art CTkImage-like placeholder -->
+                    </div>
+                    <div class="cd-meta">
+                        <h1 class="cd-title" id="cdTitle">Livro 1</h1>
+                        <p class="cd-description" id="cdDescription">Carregando descrição do CD...</p>
+                        <div class="cd-actions">
+                            <button class="btn btn-danger" id="btnClearCDCache">
+                                <span class="icon">🗑️</span> Excluir Cache
+                            </button>
+                            <button class="btn btn-success" id="btnDownloadAll">
+                                <span class="icon">📥</span> Baixar Todas as Faixas
+                            </button>
+                        </div>
+                    </div>
+                </header>
+                
+                <!-- Tracklist Section -->
+                <section class="tracklist-section">
+                    <div class="tracklist-header">
+                        <span class="col-num">#</span>
+                        <span class="col-title">Faixa</span>
+                        <span class="col-status">Status</span>
+                        <span class="col-duration">Duração</span>
+                    </div>
+                    <div class="track-list" id="trackList">
+                        <!-- Tracks dynamically loaded here -->
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Empty state when no CD is selected -->
+            <div class="empty-state" id="emptyStateSection">
+                <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M10 9l5 3-5 3V9z"></path>
+                </svg>
+                <h2>Selecione um CD para Reproduzir</h2>
+                <p>Escolha um livro ou CD na barra lateral para ver suas faixas, transmiti-las da nuvem ou baixá-las localmente.</p>
+            </div>
+        </main>
+        
+        <!-- Audio Player Control Bar (Bottom Bar) -->
+        <footer class="player-bar">
+            <!-- Left: Currently Playing Cover Art & Title -->
+            <div class="player-current-track">
+                <div class="mini-cover" id="playerMiniCover"></div>
+                <div class="track-info">
+                    <div class="track-title" id="playerTrackTitle">Nenhum áudio selecionado</div>
+                    <div class="track-album" id="playerTrackAlbum">-</div>
+                </div>
+            </div>
+            
+            <!-- Center: Audio Controls and Timeline Slider -->
+            <div class="player-controls-container">
+                <div class="control-buttons">
+                    <button class="btn-control" id="btnPrev" title="Anterior">⏮</button>
+                    <button class="btn-control btn-play" id="btnPlayPause" title="Tocar">▶</button>
+                    <button class="btn-control" id="btnStop" title="Parar">⏹</button>
+                    <button class="btn-control" id="btnNext" title="Próxima">⏭</button>
+                </div>
+                <div class="player-timeline">
+                    <span class="time-label" id="timeElapsed">00:00</span>
+                    <div class="timeline-slider-wrapper">
+                        <input type="range" class="timeline-slider" id="timelineSlider" min="0" max="100" value="0">
+                        <div class="slider-progress" id="sliderProgress" style="width: 0%;"></div>
+                    </div>
+                    <span class="time-label" id="timeDuration">00:00</span>
+                </div>
+            </div>
+            
+            <!-- Right: Volume Slider controls -->
+            <div class="player-volume-container">
+                <button class="btn-volume" id="btnMute" title="Mutar">🔊</button>
+                <div class="volume-slider-wrapper">
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+                    <div class="volume-progress" id="volumeProgress" style="width: 50%;"></div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- HTML5 Audio Node hidden from layout -->
+    <audio id="audioElement" preload="auto"></audio>
+
+    <!-- Modals (Overlay Dialogs) -->
+    
+    <!-- Settings Dialog -->
+    <div class="modal-overlay" id="modalSettings" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2>Configurações do FonoPlayer</h2>
+                <button class="modal-close" id="btnCloseSettings">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="settings-desc">Configure o repositório do GitHub e seu Token de Acesso para sincronizar novos CDs.</p>
+                
+                <div class="form-group">
+                    <label for="settingsRepoUrl">Link do Catálogo (meus_cds.json):</label>
+                    <input type="url" id="settingsRepoUrl" placeholder="Ex: https://raw.githubusercontent.com/usuario/repo/main/meus_cds.json">
+                    <small class="form-help">Link raw direto para o arquivo meus_cds.json no seu repositório.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="settingsToken">GitHub Personal Access Token (PAT):</label>
+                    <div class="input-with-button">
+                        <input type="password" id="settingsToken" placeholder="github_pat_...">
+                        <button class="btn btn-secondary" id="btnToggleToken" type="button">👁️</button>
+                    </div>
+                    <small class="form-help">Necessário apenas para importar novos CDs diretamente pelo site. O token fica salvo localmente com segurança.</small>
+                </div>
+
+                <div class="form-group row-group">
+                    <div class="row-item">
+                        <label for="settingsUser">Usuário do GitHub:</label>
+                        <input type="text" id="settingsUser" placeholder="Ex: gustavo0070000">
+                    </div>
+                    <div class="row-item">
+                        <label for="settingsRepo">Repositório:</label>
+                        <input type="text" id="settingsRepo" placeholder="Ex: fonoApp">
+                    </div>
+                </div>
+
+                <div class="form-group row-group">
+                    <div class="row-item">
+                        <label for="settingsBranch">Branch padrão:</label>
+                        <input type="text" id="settingsBranch" placeholder="Ex: main" value="main">
+                    </div>
+                    <div class="row-item">
+                        <label>Cache Local:</label>
+                        <button class="btn btn-danger btn-block" id="btnClearAllCache">Excluir todo o cache</button>
+                    </div>
+                </div>
+                <div id="cacheSpaceLabel" class="cache-space-info">Espaço em cache: 0.00 MB</div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btnCancelSettings">Cancelar</button>
+                <button class="btn btn-primary" id="btnSaveSettings">Salvar Ajustes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import CD Dialog -->
+    <div class="modal-overlay" id="modalImport" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2>Importar Novo CD / Livro</h2>
+                <button class="modal-close" id="btnCloseImport">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Pasta de Músicas do CD (contendo arquivos WAV):</label>
+                    <div class="directory-selector-box">
+                        <input type="file" id="importFolderInput" webkitdirectory directory multiple accept=".wav" style="display: none;">
+                        <button class="btn btn-secondary btn-block" id="btnSelectFolder">Selecionar pasta local...</button>
+                        <div class="selected-folder-info" id="selectedFolderText">Nenhuma pasta selecionada.</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="importTitle">Título do CD / Livro:</label>
+                    <input type="text" id="importTitle" placeholder="Ex: Livro 3 - Exercícios Fonéticos">
+                </div>
+
+                <div class="form-group">
+                    <label for="importDesc">Descrição / Observações:</label>
+                    <input type="text" id="importDesc" placeholder="Ex: Sons e exercícios para articulação fonêmica">
+                </div>
+
+                <div class="form-group">
+                    <label>Capa do CD (Opcional - Imagem JPG/PNG):</label>
+                    <div class="cover-selector-box">
+                        <input type="file" id="importCoverInput" accept="image/*" style="display: none;">
+                        <button class="btn btn-secondary btn-block" id="btnSelectCover">Escolher imagem de capa...</button>
+                        <div class="selected-folder-info" id="selectedCoverText">Nenhuma imagem selecionada.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btnCancelImport">Cancelar</button>
+                <button class="btn btn-primary" id="btnStartImport">Importar e Publicar no GitHub</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import Progress Dialog -->
+    <div class="modal-overlay" id="modalProgress" style="display: none;">
+        <div class="modal-card progress-card">
+            <div class="modal-body text-center">
+                <h2 id="progressTitle">Importação em Andamento</h2>
+                <p class="progress-log" id="progressLog">Preparando arquivos...</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
+                </div>
+                <div class="progress-percentage" id="progressPercent">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
