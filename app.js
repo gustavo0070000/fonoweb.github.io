@@ -1170,6 +1170,11 @@ async function processCDImport() {
     hideModal(modalImport);
     showModal(modalProgress);
     
+    const user = (settings.githubUser || "").trim();
+    const repo = (settings.githubRepo || "").trim();
+    const branch = (settings.githubBranch || "").trim();
+    const token = (settings.githubToken || "").trim();
+    
     try {
         updateProgress("Importando CD...", "Preparando arquivos e calculando durações...", 5);
         
@@ -1218,7 +1223,7 @@ async function processCDImport() {
             const coverBase64 = await readFileAsBase64(importedCoverFile);
             await uploadFileToGitHub(coverPath, coverBase64, `Upload cover image for CD ${title}`);
             
-            coverUrl = `https://raw.githubusercontent.com/${settings.githubUser}/${settings.githubRepo}/${settings.githubBranch}/Cds/${cleanId}/${coverFilename}`;
+            coverUrl = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/Cds/${cleanId}/${coverFilename}`;
         }
         
         // 3. Upload WAV audio files one by one to GitHub Contents API
@@ -1236,7 +1241,7 @@ async function processCDImport() {
             const audioBase64 = await readFileAsBase64(track.file);
             await uploadFileToGitHub(filePath, audioBase64, `Upload track ${track.title} for CD ${title}`);
             
-            const rawUrl = `https://raw.githubusercontent.com/${settings.githubUser}/${settings.githubRepo}/${settings.githubBranch}/Cds/${cleanId}/${encodeURIComponent(track.file.name)}`;
+            const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/Cds/${cleanId}/${encodeURIComponent(track.file.name)}`;
             
             uploadedTracksMetadata.push({
                 track_number: idx + 1,
@@ -1254,9 +1259,9 @@ async function processCDImport() {
         let sha = null;
         
         try {
-            const jsonGetRes = await fetch(`https://api.github.com/repos/${settings.githubUser}/${settings.githubRepo}/contents/meus_cds.json`, {
+            const jsonGetRes = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/meus_cds.json`, {
                 headers: {
-                    "Authorization": `token ${settings.githubToken}`,
+                    "Authorization": `token ${token}`,
                     "Accept": "application/vnd.github.v3+json"
                 }
             });
@@ -1292,7 +1297,7 @@ async function processCDImport() {
         
         // Update App version inside the updated JSON
         remoteCatalog.app_version = "1.3";
-        remoteCatalog.app_url = `https://github.com/${settings.githubUser}/${settings.githubRepo}/raw/${settings.githubBranch}/FonoPlayer.exe`;
+        remoteCatalog.app_url = `https://github.com/${user}/${repo}/raw/${branch}/FonoPlayer.exe`;
         
         // Save modified file back to GitHub
         const updatedJsonText = JSON.stringify(remoteCatalog, null, 4);
@@ -1322,14 +1327,19 @@ async function processCDImport() {
 
 // Upload a single file base64 chunk directly to GitHub REST Contents API
 async function uploadFileToGitHub(path, base64Content, commitMessage, sha = null) {
-    const url = `https://api.github.com/repos/${settings.githubUser}/${settings.githubRepo}/contents/${path}`;
+    const user = (settings.githubUser || "").trim();
+    const repo = (settings.githubRepo || "").trim();
+    const branch = (settings.githubBranch || "").trim();
+    const token = (settings.githubToken || "").trim();
+    
+    const url = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
     
     // Check if file already exists if we don't have SHA yet
     if (!sha) {
         try {
             const checkRes = await fetch(url, {
                 headers: {
-                    "Authorization": `token ${settings.githubToken}`,
+                    "Authorization": `token ${token}`,
                     "Accept": "application/vnd.github.v3+json"
                 }
             });
@@ -1345,7 +1355,7 @@ async function uploadFileToGitHub(path, base64Content, commitMessage, sha = null
     const body = {
         message: commitMessage,
         content: base64Content,
-        branch: settings.branch
+        branch: branch
     };
     if (sha) {
         body.sha = sha;
@@ -1354,7 +1364,7 @@ async function uploadFileToGitHub(path, base64Content, commitMessage, sha = null
     const response = await fetch(url, {
         method: "PUT",
         headers: {
-            "Authorization": `token ${settings.githubToken}`,
+            "Authorization": `token ${token}`,
             "Content-Type": "application/json",
             "Accept": "application/vnd.github.v3+json"
         },
@@ -1510,6 +1520,10 @@ async function handleCoverChange(e) {
     showModal(modalProgress);
     updateProgress("Enviando Nova Capa...", "Lendo imagem local...", 10);
     
+    const user = (settings.githubUser || "").trim();
+    const repo = (settings.githubRepo || "").trim();
+    const branch = (settings.githubBranch || "").trim();
+    
     try {
         const base64 = await readFileAsBase64(file);
         
@@ -1523,7 +1537,7 @@ async function handleCoverChange(e) {
         updateProgress("Atualizando Catálogo...", "Salvando referência de capa...", 80);
         
         // Store with cache buster query string to force browser refresh
-        const rawUrl = `https://raw.githubusercontent.com/${settings.githubUser}/${settings.githubRepo}/${settings.githubBranch}/${coverPath}`;
+        const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${coverPath}`;
         cd.cover_url = rawUrl + "?t=" + Date.now();
         
         // Push catalog to GitHub
@@ -1549,11 +1563,15 @@ async function pushCatalogToGitHub(remoteCatalog) {
     showModal(modalProgress);
     updateProgress("Salvando Alterações...", "Obtendo SHA do catálogo no GitHub...", 20);
     
+    const user = (settings.githubUser || "").trim();
+    const repo = (settings.githubRepo || "").trim();
+    const token = (settings.githubToken || "").trim();
+    
     let sha = null;
     try {
-        const jsonGetRes = await fetch(`https://api.github.com/repos/${settings.githubUser}/${settings.githubRepo}/contents/meus_cds.json`, {
+        const jsonGetRes = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/meus_cds.json`, {
             headers: {
-                "Authorization": `token ${settings.githubToken}`,
+                "Authorization": `token ${token}`,
                 "Accept": "application/vnd.github.v3+json"
             }
         });
