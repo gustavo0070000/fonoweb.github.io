@@ -65,7 +65,10 @@
                         <!-- Cover Art CTkImage-like placeholder -->
                     </div>
                     <div class="cd-meta">
-                        <h1 class="cd-title" id="cdTitle">Livro 1</h1>
+                        <div class="cd-title-container">
+                            <h1 class="cd-title" id="cdTitle">Livro 1</h1>
+                            <button class="btn-edit-header" id="btnEditCD" title="Editar CD/Livro">✏️</button>
+                        </div>
                         <p class="cd-description" id="cdDescription">Carregando descrição do CD...</p>
                         <div class="cd-actions">
                             <button class="btn btn-danger" id="btnClearCDCache">
@@ -232,6 +235,12 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="importCategory">Pasta / Categoria (opcional):</label>
+                    <input type="text" id="importCategory" placeholder="Ex: Exercícios, Livros, Sons Ambientais">
+                    <small class="form-help">Digite o nome da pasta para agrupar este CD na barra lateral.</small>
+                </div>
+
+                <div class="form-group">
                     <label>Capa do CD (Opcional - Imagem JPG/PNG):</label>
                     <div class="cover-selector-box">
                         <input type="file" id="importCoverInput" accept="image/*" style="display: none;">
@@ -260,6 +269,60 @@
             </div>
         </div>
     </div>
+
+    <!-- Edit CD Dialog -->
+    <div class="modal-overlay" id="modalEditCD" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2>Editar CD / Livro</h2>
+                <button class="modal-close" id="btnCloseEditCD">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="editCDTitle">Título do CD / Livro:</label>
+                    <input type="text" id="editCDTitle" placeholder="Ex: Livro 1 - Exercícios Fonológicos">
+                </div>
+
+                <div class="form-group">
+                    <label for="editCDDesc">Descrição / Observações:</label>
+                    <input type="text" id="editCDDesc" placeholder="Ex: Exercícios práticos de articulação vocal">
+                </div>
+
+                <div class="form-group">
+                    <label for="editCDCategory">Pasta / Categoria (opcional):</label>
+                    <input type="text" id="editCDCategory" placeholder="Ex: Exercícios, Livros, Sons Ambientais">
+                    <small class="form-help">Digite o nome da pasta para agrupar este CD na barra lateral.</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btnCancelEditCD">Cancelar</button>
+                <button class="btn btn-primary" id="btnSaveCDChanges">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rename Track Dialog -->
+    <div class="modal-overlay" id="modalRenameTrack" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2>Renomear Faixa</h2>
+                <button class="modal-close" id="btnCloseRenameTrack">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="renameTrackTitle">Nome da Faixa:</label>
+                    <input type="text" id="renameTrackTitle" placeholder="Ex: Faixa 01 - Vogais">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btnCancelRenameTrack">Cancelar</button>
+                <button class="btn btn-primary" id="btnSaveTrackChanges">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden cover replacement input file selector -->
+    <input type="file" id="changeCoverInput" accept="image/*" style="display: none;">
 
     <!-- App Logic Script -->
     <script src="app.js"></script>

@@ -10,12 +10,12 @@ let isMuted = false;
 let previousVolume = 0.5;
 
 // Settings configuration
-const DEFAULT_CONFIG_URL = "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/meus_cds.json";
+const DEFAULT_CONFIG_URL = "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/meus_cds.json";
 let settings = {
     configUrl: DEFAULT_CONFIG_URL,
     githubToken: "",
     githubUser: "gustavo0070000",
-    githubRepo: "fonoApp",
+    githubRepo: "fonoweb.github.io",
     githubBranch: "main"
 };
 
@@ -83,12 +83,36 @@ const importCoverInput = document.getElementById("importCoverInput");
 const selectedCoverText = document.getElementById("selectedCoverText");
 const importTitle = document.getElementById("importTitle");
 const importDesc = document.getElementById("importDesc");
+const importCategory = document.getElementById("importCategory");
 
 const modalProgress = document.getElementById("modalProgress");
 const progressTitle = document.getElementById("progressTitle");
 const progressLog = document.getElementById("progressLog");
 const progressBar = document.getElementById("progressBar");
 const progressPercent = document.getElementById("progressPercent");
+
+// Edit CD Modal Elements
+const modalEditCD = document.getElementById("modalEditCD");
+const btnCloseEditCD = document.getElementById("btnCloseEditCD");
+const btnCancelEditCD = document.getElementById("btnCancelEditCD");
+const btnSaveCDChanges = document.getElementById("btnSaveCDChanges");
+const editCDTitle = document.getElementById("editCDTitle");
+const editCDDesc = document.getElementById("editCDDesc");
+const editCDCategory = document.getElementById("editCDCategory");
+const btnEditCD = document.getElementById("btnEditCD");
+
+// Rename Track Modal Elements
+const modalRenameTrack = document.getElementById("modalRenameTrack");
+const btnCloseRenameTrack = document.getElementById("btnCloseRenameTrack");
+const btnCancelRenameTrack = document.getElementById("btnCancelRenameTrack");
+const btnSaveTrackChanges = document.getElementById("btnSaveTrackChanges");
+const renameTrackTitle = document.getElementById("renameTrackTitle");
+
+// Cover art change hidden input
+const changeCoverInput = document.getElementById("changeCoverInput");
+
+// Edit state tracking
+let editingTrackIndex = -1;
 
 // Temporary variables for file imports
 let importedFilesList = [];
@@ -128,7 +152,7 @@ function loadSettings() {
     settingsRepoUrl.value = settings.configUrl || DEFAULT_CONFIG_URL;
     settingsToken.value = settings.githubToken || "";
     settingsUser.value = settings.githubUser || "gustavo0070000";
-    settingsRepo.value = settings.githubRepo || "fonoApp";
+    settingsRepo.value = settings.githubRepo || "fonoweb.github.io";
     settingsBranch.value = settings.githubBranch || "main";
 }
 
@@ -137,7 +161,7 @@ function saveSettings() {
     settings.configUrl = settingsRepoUrl.value.trim() || DEFAULT_CONFIG_URL;
     settings.githubToken = settingsToken.value.trim();
     settings.githubUser = settingsUser.value.trim() || "gustavo0070000";
-    settings.githubRepo = settingsRepo.value.trim() || "fonoApp";
+    settings.githubRepo = settingsRepo.value.trim() || "fonoweb.github.io";
     settings.githubBranch = settingsBranch.value.trim() || "main";
     
     // Convert regular github web page urls to raw urls
@@ -293,6 +317,7 @@ function initializeUIEvents() {
         // Reset dialog variables
         importTitle.value = "";
         importDesc.value = "";
+        importCategory.value = "";
         importedFilesList = [];
         importedCoverFile = null;
         selectedFolderText.textContent = "Nenhuma pasta selecionada.";
@@ -302,6 +327,20 @@ function initializeUIEvents() {
     btnCloseImport.addEventListener("click", () => hideModal(modalImport));
     btnCancelImport.addEventListener("click", () => hideModal(modalImport));
     btnStartImport.addEventListener("click", processCDImport);
+
+    // Edit CD events
+    btnEditCD.addEventListener("click", openEditCDDialog);
+    btnCloseEditCD.addEventListener("click", () => hideModal(modalEditCD));
+    btnCancelEditCD.addEventListener("click", () => hideModal(modalEditCD));
+    btnSaveCDChanges.addEventListener("click", saveCDChanges);
+
+    // Rename Track events
+    btnCloseRenameTrack.addEventListener("click", () => hideModal(modalRenameTrack));
+    btnCancelRenameTrack.addEventListener("click", () => hideModal(modalRenameTrack));
+    btnSaveTrackChanges.addEventListener("click", saveTrackChanges);
+
+    // Cover Art hidden input event
+    changeCoverInput.addEventListener("change", handleCoverChange);
 
     // Sync button triggers download
     btnSync.addEventListener("click", () => {
@@ -417,6 +456,17 @@ async function loadCatalogData(forceFetch = false) {
     }
 }
 
+// Helper functions for category open/close states
+function getCollapsedCategories() {
+    const saved = localStorage.getItem("fonoplayer_collapsed_categories");
+    return saved ? JSON.parse(saved) : {};
+}
+function setCategoryCollapsed(category, isCollapsed) {
+    const collapsed = getCollapsedCategories();
+    collapsed[category] = isCollapsed;
+    localStorage.setItem("fonoplayer_collapsed_categories", JSON.stringify(collapsed));
+}
+
 // Rebuild CD cards list in left sidebar
 function rebuildCDSidebar() {
     if (!cdsData || !cdsData.cds) {
@@ -426,59 +476,130 @@ function rebuildCDSidebar() {
     
     cdListEl.innerHTML = "";
     
-    cdsData.cds.forEach(cd => {
-        const div = document.createElement("div");
-        div.className = "cd-nav-item";
-        if (cd.id === selectedCdId) {
-            div.className += " active";
-        }
+    // Check if we have categories
+    const hasCategories = cdsData.cds.some(cd => cd.category && cd.category.trim() !== "");
+    
+    if (hasCategories) {
+        // Group by category
+        const groups = {};
+        cdsData.cds.forEach(cd => {
+            const cat = (cd.category && cd.category.trim() !== "") ? cd.category.trim() : "Geral";
+            if (!groups[cat]) groups[cat] = [];
+            groups[cat].push(cd);
+        });
         
-        div.addEventListener("click", () => selectCD(cd.id));
+        const collapsedMap = getCollapsedCategories();
         
-        // Circular Cover Art thumbnail
-        const thumbDiv = document.createElement("div");
-        thumbDiv.className = "cd-nav-thumbnail";
-        if (!cd.cover_url) {
-            thumbDiv.className += " placeholder-art";
-            const hole = document.createElement("div");
-            hole.className = "center-hole";
-            thumbDiv.appendChild(hole);
-        } else {
-            const img = document.createElement("img");
-            img.src = cd.cover_url;
-            img.alt = cd.title;
-            // Handle loading error by falling back to placeholder
-            img.onerror = () => {
-                thumbDiv.innerHTML = '<div class="center-hole"></div>';
-                thumbDiv.className += " placeholder-art";
-            };
-            thumbDiv.appendChild(img);
-        }
+        // Sort categories ("Geral" at the end, others alphabetically)
+        const sortedCats = Object.keys(groups).sort((a, b) => {
+            if (a === "Geral") return 1;
+            if (b === "Geral") return -1;
+            return a.localeCompare(b);
+        });
         
-        // Meta details
-        const infoDiv = document.createElement("div");
-        infoDiv.className = "cd-nav-info";
-        
-        const titleDiv = document.createElement("div");
-        titleDiv.className = "cd-nav-title";
-        titleDiv.textContent = cd.title;
-        
-        const descDiv = document.createElement("div");
-        descDiv.className = "cd-nav-desc";
-        descDiv.textContent = cd.description || `${cd.tracks.length} faixas`;
-        
-        infoDiv.appendChild(titleDiv);
-        infoDiv.appendChild(descDiv);
-        
-        div.appendChild(thumbDiv);
-        div.appendChild(infoDiv);
-        cdListEl.appendChild(div);
-    });
+        sortedCats.forEach(catName => {
+            const folderDiv = document.createElement("div");
+            folderDiv.className = "category-folder";
+            const isCollapsed = collapsedMap[catName] === true;
+            if (isCollapsed) {
+                folderDiv.classList.add("collapsed");
+            }
+            
+            const headerDiv = document.createElement("div");
+            headerDiv.className = "category-header";
+            
+            const titleDiv = document.createElement("div");
+            titleDiv.className = "category-header-title";
+            titleDiv.innerHTML = `<span class="folder-icon">📁</span> <span class="category-name">${catName}</span>`;
+            
+            const arrowSpan = document.createElement("span");
+            arrowSpan.className = "folder-arrow";
+            arrowSpan.textContent = "▶";
+            
+            headerDiv.appendChild(titleDiv);
+            headerDiv.appendChild(arrowSpan);
+            folderDiv.appendChild(headerDiv);
+            
+            const contentDiv = document.createElement("div");
+            contentDiv.className = "category-content";
+            
+            groups[catName].forEach(cd => {
+                const cdItem = createCDNavItem(cd);
+                contentDiv.appendChild(cdItem);
+            });
+            
+            folderDiv.appendChild(contentDiv);
+            
+            // Toggle collapse on click
+            headerDiv.addEventListener("click", () => {
+                const nowCollapsed = folderDiv.classList.toggle("collapsed");
+                setCategoryCollapsed(catName, nowCollapsed);
+            });
+            
+            cdListEl.appendChild(folderDiv);
+        });
+    } else {
+        // Just list them directly
+        cdsData.cds.forEach(cd => {
+            const cdItem = createCDNavItem(cd);
+            cdListEl.appendChild(cdItem);
+        });
+    }
     
     // Auto-select first CD if nothing is selected yet
     if (!selectedCdId && cdsData.cds.length > 0) {
         selectCD(cdsData.cds[0].id);
     }
+}
+
+function createCDNavItem(cd) {
+    const div = document.createElement("div");
+    div.className = "cd-nav-item";
+    div.dataset.id = cd.id;
+    if (cd.id === selectedCdId) {
+        div.className += " active";
+    }
+    
+    div.addEventListener("click", () => selectCD(cd.id));
+    
+    // Circular Cover Art thumbnail
+    const thumbDiv = document.createElement("div");
+    thumbDiv.className = "cd-nav-thumbnail";
+    if (!cd.cover_url) {
+        thumbDiv.className += " placeholder-art";
+        const hole = document.createElement("div");
+        hole.className = "center-hole";
+        thumbDiv.appendChild(hole);
+    } else {
+        const img = document.createElement("img");
+        img.src = cd.cover_url;
+        img.alt = cd.title;
+        // Handle loading error by falling back to placeholder
+        img.onerror = () => {
+            thumbDiv.innerHTML = '<div class="center-hole"></div>';
+            thumbDiv.className = "cd-nav-thumbnail placeholder-art";
+        };
+        thumbDiv.appendChild(img);
+    }
+    
+    // Meta details
+    const infoDiv = document.createElement("div");
+    infoDiv.className = "cd-nav-info";
+    
+    const titleDiv = document.createElement("div");
+    titleDiv.className = "cd-nav-title";
+    titleDiv.textContent = cd.title;
+    
+    const descDiv = document.createElement("div");
+    descDiv.className = "cd-nav-desc";
+    descDiv.textContent = cd.description || `${cd.tracks.length} faixas`;
+    
+    infoDiv.appendChild(titleDiv);
+    infoDiv.appendChild(descDiv);
+    
+    div.appendChild(thumbDiv);
+    div.appendChild(infoDiv);
+    return div;
 }
 
 // Select CD and display tracks list in main content
@@ -494,8 +615,8 @@ async function selectCD(cdId) {
     const cd = cds[cdIdx];
     
     // Re-render sidebar highlights
-    items.forEach((item, idx) => {
-        if (cds[idx].id === cdId) {
+    items.forEach(item => {
+        if (item.dataset.id === cdId) {
             item.classList.add("active");
         } else {
             item.classList.remove("active");
@@ -512,12 +633,14 @@ async function selectCD(cdId) {
     
     // Render large header cover image
     cdMainCoverEl.innerHTML = "";
+    cdMainCoverEl.classList.add("interactive");
     if (cd.cover_url) {
         const img = document.createElement("img");
         img.src = cd.cover_url;
         img.alt = cd.title;
         img.onerror = () => {
             cdMainCoverEl.innerHTML = '<div class="center-hole-large"></div>';
+            appendCoverOverlay();
         };
         cdMainCoverEl.appendChild(img);
     } else {
@@ -525,9 +648,29 @@ async function selectCD(cdId) {
         hole.className = "center-hole-large";
         cdMainCoverEl.appendChild(hole);
     }
+    appendCoverOverlay();
     
     // Check local Cache Storage to dynamically show which tracks are downloaded
     renderCDTracksList(cd);
+}
+
+function appendCoverOverlay() {
+    const overlay = document.createElement("div");
+    overlay.className = "cover-overlay";
+    overlay.innerHTML = `
+        <div class="cover-overlay-icon">📸</div>
+        <div class="cover-overlay-text">Alterar Capa</div>
+    `;
+    overlay.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (!settings.githubToken || !settings.githubUser || !settings.githubRepo) {
+            alert("Por favor, preencha o Token do GitHub e as informações do repositório em 'Ajustes' antes de alterar a capa.");
+            showModal(modalSettings);
+            return;
+        }
+        changeCoverInput.click();
+    });
+    cdMainCoverEl.appendChild(overlay);
 }
 
 // Render tracks of a CD with local cache check badges
@@ -587,6 +730,16 @@ async function renderCDTracksList(cd) {
         titleSpan.className = "track-row-title";
         titleSpan.textContent = track.title;
         titleCol.appendChild(titleSpan);
+        
+        const btnEditRow = document.createElement("button");
+        btnEditRow.className = "btn-edit-row";
+        btnEditRow.textContent = "✏️";
+        btnEditRow.title = "Renomear Faixa";
+        btnEditRow.addEventListener("click", (e) => {
+            e.stopPropagation();
+            openRenameTrackDialog(index);
+        });
+        titleCol.appendChild(btnEditRow);
         
         // Col 3: Status Cloud Badge
         const statusCol = document.createElement("div");
@@ -990,6 +1143,7 @@ function readStringFromBuffer(view, offset, length) {
 async function processCDImport() {
     const title = importTitle.value.trim();
     const desc = importDesc.value.trim();
+    const categoryVal = importCategory.value.trim();
     
     // Validations
     if (importedFilesList.length === 0) {
@@ -1126,6 +1280,7 @@ async function processCDImport() {
             title: title,
             description: desc || `Exercícios e faixas de áudio do CD ${title}.`,
             cover_url: coverUrl || (existingCdIdx !== -1 ? remoteCatalog.cds[existingCdIdx].cover_url : ""),
+            category: categoryVal,
             tracks: uploadedTracksMetadata
         };
         
@@ -1257,4 +1412,177 @@ function formatTime(seconds) {
     const mins = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
     return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+}
+
+// ========================================================
+// EDITING METADATA AND FILE UPLOAD HANDLERS
+// ========================================================
+
+// CD Metadata Edit Dialog
+function openEditCDDialog() {
+    const cd = cdsData.cds.find(c => c.id === selectedCdId);
+    if (!cd) return;
+    
+    editCDTitle.value = cd.title;
+    editCDDesc.value = cd.description || "";
+    editCDCategory.value = cd.category || "";
+    showModal(modalEditCD);
+}
+
+async function saveCDChanges() {
+    const titleVal = editCDTitle.value.trim();
+    const descVal = editCDDesc.value.trim();
+    const catVal = editCDCategory.value.trim();
+    
+    if (!titleVal) {
+        alert("O título do CD não pode estar vazio.");
+        return;
+    }
+    
+    const cd = cdsData.cds.find(c => c.id === selectedCdId);
+    if (!cd) return;
+    
+    cd.title = titleVal;
+    cd.description = descVal;
+    cd.category = catVal;
+    
+    hideModal(modalEditCD);
+    
+    try {
+        await pushCatalogToGitHub(cdsData);
+    } catch (err) {
+        console.error("Error saving CD changes:", err);
+        alert(`Erro ao salvar alterações no GitHub:\n${err.message}`);
+    }
+}
+
+// Track Rename Dialog
+function openRenameTrackDialog(index) {
+    editingTrackIndex = index;
+    const cd = cdsData.cds.find(c => c.id === selectedCdId);
+    if (!cd) return;
+    
+    const track = cd.tracks[index];
+    if (!track) return;
+    
+    renameTrackTitle.value = track.title;
+    showModal(modalRenameTrack);
+}
+
+async function saveTrackChanges() {
+    const titleVal = renameTrackTitle.value.trim();
+    if (!titleVal) {
+        alert("O nome da faixa não pode estar vazio.");
+        return;
+    }
+    
+    const cd = cdsData.cds.find(c => c.id === selectedCdId);
+    if (!cd) return;
+    
+    const track = cd.tracks[editingTrackIndex];
+    if (!track) return;
+    
+    track.title = titleVal;
+    
+    // Update current playing track text if matches
+    if (playingCdId === selectedCdId && playingTrackIndex === editingTrackIndex) {
+        playerTrackTitle.textContent = titleVal;
+    }
+    
+    hideModal(modalRenameTrack);
+    
+    try {
+        await pushCatalogToGitHub(cdsData);
+    } catch (err) {
+        console.error("Error saving track name changes:", err);
+        alert(`Erro ao salvar alterações no GitHub:\n${err.message}`);
+    }
+}
+
+// Cover Art Image Upload
+async function handleCoverChange(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    
+    const cd = cdsData.cds.find(c => c.id === selectedCdId);
+    if (!cd) return;
+    
+    showModal(modalProgress);
+    updateProgress("Enviando Nova Capa...", "Lendo imagem local...", 10);
+    
+    try {
+        const base64 = await readFileAsBase64(file);
+        
+        updateProgress("Enviando Nova Capa...", "Fazendo upload para o GitHub...", 40);
+        const ext = file.name.substring(file.name.lastIndexOf('.')) || ".png";
+        const coverFilename = `cover${ext}`;
+        const coverPath = `Cds/${cd.id}/${coverFilename}`;
+        
+        await uploadFileToGitHub(coverPath, base64, `Upload cover image for CD: ${cd.title}`);
+        
+        updateProgress("Atualizando Catálogo...", "Salvando referência de capa...", 80);
+        
+        // Store with cache buster query string to force browser refresh
+        const rawUrl = `https://raw.githubusercontent.com/${settings.githubUser}/${settings.githubRepo}/${settings.githubBranch}/${coverPath}`;
+        cd.cover_url = rawUrl + "?t=" + Date.now();
+        
+        // Push catalog to GitHub
+        await pushCatalogToGitHub(cdsData);
+        
+        // Update mini cover if currently playing
+        if (playingCdId === cd.id) {
+            playerMiniCover.innerHTML = "";
+            const img = document.createElement("img");
+            img.src = cd.cover_url;
+            img.alt = cd.title;
+            playerMiniCover.appendChild(img);
+        }
+    } catch (err) {
+        console.error("Error uploading cover image:", err);
+        hideModal(modalProgress);
+        alert(`Falha ao alterar a capa do CD:\n${err.message}`);
+    }
+}
+
+// Helper to push updated JSON to GitHub
+async function pushCatalogToGitHub(remoteCatalog) {
+    showModal(modalProgress);
+    updateProgress("Salvando Alterações...", "Obtendo SHA do catálogo no GitHub...", 20);
+    
+    let sha = null;
+    try {
+        const jsonGetRes = await fetch(`https://api.github.com/repos/${settings.githubUser}/${settings.githubRepo}/contents/meus_cds.json`, {
+            headers: {
+                "Authorization": `token ${settings.githubToken}`,
+                "Accept": "application/vnd.github.v3+json"
+            }
+        });
+        
+        if (jsonGetRes.ok) {
+            const getJson = await jsonGetRes.json();
+            sha = getJson.sha;
+        }
+    } catch (getErr) {
+        console.warn("Could not retrieve remote catalog SHA:", getErr);
+    }
+    
+    updateProgress("Salvando Alterações...", "Enviando novos dados para o GitHub...", 60);
+    
+    // Convert to UTF-8 Base64
+    const updatedJsonText = JSON.stringify(remoteCatalog, null, 4);
+    const updatedJsonBase64 = btoa(unescape(encodeURIComponent(updatedJsonText)));
+    
+    await uploadFileToGitHub("meus_cds.json", updatedJsonBase64, "Update catalog via FonoPlayer Web", sha);
+    
+    updateProgress("Concluído!", "Alterações publicadas com sucesso!", 100);
+    
+    // Save to local storage cache
+    cdsData = remoteCatalog;
+    localStorage.setItem("fonoplayer_catalog_data", JSON.stringify(remoteCatalog));
+    
+    setTimeout(() => {
+        hideModal(modalProgress);
+        rebuildCDSidebar();
+        selectCD(selectedCdId);
+    }, 1000);
 }

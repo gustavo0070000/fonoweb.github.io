@@ -1128,3 +1128,148 @@ body {
         display: none;
     }
 }
+
+/* ========================================================
+   FonoPlayer V1.4 Improvements Styling
+   ======================================================== */
+
+/* Sidebar Category Accordion Folders */
+.category-folder {
+    margin-bottom: 8px;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    transition: var(--transition-normal);
+}
+
+.category-folder.collapsed .category-content {
+    display: none;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.02);
+    user-select: none;
+    transition: var(--transition-fast);
+}
+
+.category-header:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.category-header:hover .category-header-title {
+    color: var(--color-primary);
+}
+
+.category-header-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-text-main);
+    transition: var(--transition-fast);
+}
+
+.folder-arrow {
+    font-size: 10px;
+    color: var(--color-text-muted);
+    transition: transform 0.2s ease;
+}
+
+.category-folder:not(.collapsed) .folder-arrow {
+    transform: rotate(90deg);
+}
+
+.category-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/* Interactive CD Cover Upload Hover Effect */
+.cd-cover-wrapper.interactive {
+    cursor: pointer;
+}
+
+.cover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition-fast);
+    z-index: 3;
+}
+
+.cd-cover-wrapper:hover .cover-overlay {
+    opacity: 1;
+}
+
+.cover-overlay-icon {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.cover-overlay-text {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-primary);
+}
+
+/* CD Title and Track Row Edit Buttons */
+.cd-title-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.btn-edit-header, .btn-edit-row {
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.btn-edit-header:hover {
+    color: var(--color-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-edit-row {
+    opacity: 0;
+    margin-left: 8px;
+}
+
+.track-title-col:hover .btn-edit-row {
+    opacity: 1;
+}
+
+.btn-edit-row:hover {
+    color: var(--color-primary);
+    transform: scale(1.15);
+}
+
