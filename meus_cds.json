@@ -6,162 +6,162 @@
             "id": "escutando_com_interferentes",
             "title": "Escutando Com Interferentes",
             "description": "Exercícios e faixas de áudio do CD Escutando Com Interferentes.",
-            "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/cover.png",
+            "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/cover.png",
             "tracks": [
                 {
                     "track_number": 1,
                     "title": "01 Track01",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/01 Track01.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/01 Track01.wav",
                     "duration": "01:48"
                 },
                 {
                     "track_number": 2,
                     "title": "02 Track02",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/02 Track02.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/02 Track02.wav",
                     "duration": "01:50"
                 },
                 {
                     "track_number": 3,
                     "title": "03 Track03",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/03 Track03.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/03 Track03.wav",
                     "duration": "00:59"
                 },
                 {
                     "track_number": 4,
                     "title": "04 Track04",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/04 Track04.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/04 Track04.wav",
                     "duration": "01:00"
                 },
                 {
                     "track_number": 5,
                     "title": "05 Track05",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/05 Track05.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/05 Track05.wav",
                     "duration": "01:01"
                 },
                 {
                     "track_number": 6,
                     "title": "06 Track06",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/06 Track06.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/06 Track06.wav",
                     "duration": "01:01"
                 },
                 {
                     "track_number": 7,
                     "title": "07 Track07",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/07 Track07.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/07 Track07.wav",
                     "duration": "01:27"
                 },
                 {
                     "track_number": 8,
                     "title": "08 Track08",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/08 Track08.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/08 Track08.wav",
                     "duration": "01:24"
                 },
                 {
                     "track_number": 9,
                     "title": "09 Track09",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/09 Track09.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/09 Track09.wav",
                     "duration": "01:26"
                 },
                 {
                     "track_number": 10,
                     "title": "10 Track10",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/10 Track10.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/10 Track10.wav",
                     "duration": "01:25"
                 },
                 {
                     "track_number": 11,
                     "title": "11 Track11",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/11 Track11.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/11 Track11.wav",
                     "duration": "01:10"
                 },
                 {
                     "track_number": 12,
                     "title": "12 Track12",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/12 Track12.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/12 Track12.wav",
                     "duration": "01:07"
                 },
                 {
                     "track_number": 13,
                     "title": "13 Track13",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/13 Track13.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/13 Track13.wav",
                     "duration": "01:39"
                 },
                 {
                     "track_number": 14,
                     "title": "14 Track14",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/14 Track14.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/14 Track14.wav",
                     "duration": "01:39"
                 },
                 {
                     "track_number": 15,
                     "title": "15 Track15",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/15 Track15.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/15 Track15.wav",
                     "duration": "01:17"
                 },
                 {
                     "track_number": 16,
                     "title": "16 Track16",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/16 Track16.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/16 Track16.wav",
                     "duration": "01:16"
                 },
                 {
                     "track_number": 17,
                     "title": "17 Track17",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/17 Track17.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/17 Track17.wav",
                     "duration": "01:34"
                 },
                 {
                     "track_number": 18,
                     "title": "18 Track18",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/18 Track18.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/18 Track18.wav",
                     "duration": "01:39"
                 },
                 {
                     "track_number": 19,
                     "title": "19 Track19",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/19 Track19.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/19 Track19.wav",
                     "duration": "02:02"
                 },
                 {
                     "track_number": 20,
                     "title": "20 Track20",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/20 Track20.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/20 Track20.wav",
                     "duration": "02:02"
                 },
                 {
                     "track_number": 21,
                     "title": "21 Track21",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/21 Track21.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/21 Track21.wav",
                     "duration": "02:26"
                 },
                 {
                     "track_number": 22,
                     "title": "22 Track22",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/22 Track22.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/22 Track22.wav",
                     "duration": "02:23"
                 },
                 {
                     "track_number": 23,
                     "title": "23 Track23",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/23 Track23.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/23 Track23.wav",
                     "duration": "01:02"
                 },
                 {
                     "track_number": 24,
                     "title": "24 Track24",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/24 Track24.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/24 Track24.wav",
                     "duration": "01:03"
                 },
                 {
                     "track_number": 25,
                     "title": "25 Track25",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/25 Track25.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/25 Track25.wav",
                     "duration": "01:32"
                 },
                 {
                     "track_number": 26,
                     "title": "26 Track26",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_com_interferentes/26 Track26.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_com_interferentes/26 Track26.wav",
                     "duration": "01:28"
                 }
             ]
@@ -170,120 +170,120 @@
             "id": "escutando_processamento_temporal",
             "title": "Escutando Processamento Temporal",
             "description": "Exercícios e faixas de áudio do CD Escutando Processamento Temporal.",
-            "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/cover.png",
+            "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/cover.png",
             "tracks": [
                 {
                     "track_number": 1,
                     "title": "02 Track02",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/02 Track02.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/02 Track02.wav",
                     "duration": "02:42"
                 },
                 {
                     "track_number": 2,
                     "title": "03 Track03",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/03 Track03.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/03 Track03.wav",
                     "duration": "02:35"
                 },
                 {
                     "track_number": 3,
                     "title": "04 Track04",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/04 Track04.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/04 Track04.wav",
                     "duration": "02:30"
                 },
                 {
                     "track_number": 4,
                     "title": "05 Track05",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/05 Track05.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/05 Track05.wav",
                     "duration": "02:39"
                 },
                 {
                     "track_number": 5,
                     "title": "06 Track06",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/06 Track06.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/06 Track06.wav",
                     "duration": "02:32"
                 },
                 {
                     "track_number": 6,
                     "title": "07 Track07",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/07 Track07.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/07 Track07.wav",
                     "duration": "02:56"
                 },
                 {
                     "track_number": 7,
                     "title": "08 Track08",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/08 Track08.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/08 Track08.wav",
                     "duration": "02:41"
                 },
                 {
                     "track_number": 8,
                     "title": "09 Track09",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/09 Track09.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/09 Track09.wav",
                     "duration": "04:04"
                 },
                 {
                     "track_number": 9,
                     "title": "10 Track10",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/10 Track10.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/10 Track10.wav",
                     "duration": "03:48"
                 },
                 {
                     "track_number": 10,
                     "title": "11 Track11",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/11 Track11.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/11 Track11.wav",
                     "duration": "06:35"
                 },
                 {
                     "track_number": 11,
                     "title": "12 Track12",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/12 Track12.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/12 Track12.wav",
                     "duration": "02:52"
                 },
                 {
                     "track_number": 12,
                     "title": "13 Track13",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/13 Track13.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/13 Track13.wav",
                     "duration": "01:02"
                 },
                 {
                     "track_number": 13,
                     "title": "14 Track14",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/14 Track14.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/14 Track14.wav",
                     "duration": "02:31"
                 },
                 {
                     "track_number": 14,
                     "title": "15 Track15",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/15 Track15.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/15 Track15.wav",
                     "duration": "02:38"
                 },
                 {
                     "track_number": 15,
                     "title": "16 Track16",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/16 Track16.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/16 Track16.wav",
                     "duration": "02:46"
                 },
                 {
                     "track_number": 16,
                     "title": "17 Track17",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/17 Track17.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/17 Track17.wav",
                     "duration": "02:48"
                 },
                 {
                     "track_number": 17,
                     "title": "18 Track18",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/18 Track18.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/18 Track18.wav",
                     "duration": "02:05"
                 },
                 {
                     "track_number": 18,
                     "title": "19 Track19",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/19 Track19.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/19 Track19.wav",
                     "duration": "02:00"
                 },
                 {
                     "track_number": 19,
                     "title": "20 Track20",
-                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escutando_processamento_temporal/20 Track20.wav",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutando_processamento_temporal/20 Track20.wav",
                     "duration": "01:53"
                 }
             ]
