@@ -3,6 +3,1802 @@
     "app_url": "https://github.com/gustavo0070000/fonoweb.github.io/raw/main/FonoPlayer.exe",
     "cds": [
         {
+            "id": "HabilidadesAuditivas",
+            "title": "Habilidadesauditivas",
+            "description": "Exercícios e faixas de áudio do CD Habilidadesauditivas.",
+            "cover_url": "",
+            "tracks": [
+                {
+                    "track_number": 1,
+                    "title": "01 Track01",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/01 Track01.wav",
+                    "duration": "00:48"
+                },
+                {
+                    "track_number": 2,
+                    "title": "02 Track02",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/02 Track02.wav",
+                    "duration": "00:44"
+                },
+                {
+                    "track_number": 3,
+                    "title": "03 Track03",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/03 Track03.wav",
+                    "duration": "00:50"
+                },
+                {
+                    "track_number": 4,
+                    "title": "04 Track04",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/04 Track04.wav",
+                    "duration": "00:43"
+                },
+                {
+                    "track_number": 5,
+                    "title": "05 Track05",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/05 Track05.wav",
+                    "duration": "00:25"
+                },
+                {
+                    "track_number": 6,
+                    "title": "06 Track06",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/06 Track06.wav",
+                    "duration": "00:28"
+                },
+                {
+                    "track_number": 7,
+                    "title": "07 Track07",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/07 Track07.wav",
+                    "duration": "00:56"
+                },
+                {
+                    "track_number": 8,
+                    "title": "08 Track08",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/08 Track08.wav",
+                    "duration": "00:30"
+                },
+                {
+                    "track_number": 9,
+                    "title": "09 Track09",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/09 Track09.wav",
+                    "duration": "01:01"
+                },
+                {
+                    "track_number": 10,
+                    "title": "10 Track10",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/10 Track10.wav",
+                    "duration": "01:18"
+                },
+                {
+                    "track_number": 11,
+                    "title": "11 Track11",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/11 Track11.wav",
+                    "duration": "01:17"
+                },
+                {
+                    "track_number": 12,
+                    "title": "12 Track12",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/12 Track12.wav",
+                    "duration": "01:17"
+                },
+                {
+                    "track_number": 13,
+                    "title": "13 Track13",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/13 Track13.wav",
+                    "duration": "00:23"
+                },
+                {
+                    "track_number": 14,
+                    "title": "14 Track14",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/14 Track14.wav",
+                    "duration": "01:01"
+                },
+                {
+                    "track_number": 15,
+                    "title": "15 Track15",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/15 Track15.wav",
+                    "duration": "01:45"
+                },
+                {
+                    "track_number": 16,
+                    "title": "16 Track16",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/16 Track16.wav",
+                    "duration": "01:12"
+                },
+                {
+                    "track_number": 17,
+                    "title": "17 Track17",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/17 Track17.wav",
+                    "duration": "00:57"
+                },
+                {
+                    "track_number": 18,
+                    "title": "18 Track18",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/18 Track18.wav",
+                    "duration": "01:48"
+                },
+                {
+                    "track_number": 19,
+                    "title": "19 Track19",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/19 Track19.wav",
+                    "duration": "01:22"
+                },
+                {
+                    "track_number": 20,
+                    "title": "20 Track20",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/20 Track20.wav",
+                    "duration": "00:29"
+                },
+                {
+                    "track_number": 21,
+                    "title": "21 Track21",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/21 Track21.wav",
+                    "duration": "02:11"
+                },
+                {
+                    "track_number": 22,
+                    "title": "22 Track22",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/22 Track22.wav",
+                    "duration": "05:24"
+                },
+                {
+                    "track_number": 23,
+                    "title": "23 Track23",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/23 Track23.wav",
+                    "duration": "04:25"
+                },
+                {
+                    "track_number": 24,
+                    "title": "24 Track24",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/24 Track24.wav",
+                    "duration": "02:15"
+                },
+                {
+                    "track_number": 25,
+                    "title": "25 Track25",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/25 Track25.wav",
+                    "duration": "04:07"
+                },
+                {
+                    "track_number": 26,
+                    "title": "26 Track26",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/26 Track26.wav",
+                    "duration": "02:49"
+                },
+                {
+                    "track_number": 27,
+                    "title": "27 Track27",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/27 Track27.wav",
+                    "duration": "02:18"
+                },
+                {
+                    "track_number": 28,
+                    "title": "28 Track28",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/28 Track28.wav",
+                    "duration": "01:21"
+                },
+                {
+                    "track_number": 29,
+                    "title": "29 Track29",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/29 Track29.wav",
+                    "duration": "01:30"
+                },
+                {
+                    "track_number": 30,
+                    "title": "30 Track30",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/30 Track30.wav",
+                    "duration": "03:30"
+                },
+                {
+                    "track_number": 31,
+                    "title": "31 Track31",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/31 Track31.wav",
+                    "duration": "01:58"
+                },
+                {
+                    "track_number": 32,
+                    "title": "32 Track32",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/32 Track32.wav",
+                    "duration": "01:03"
+                },
+                {
+                    "track_number": 33,
+                    "title": "33 Track33",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/33 Track33.wav",
+                    "duration": "01:45"
+                },
+                {
+                    "track_number": 34,
+                    "title": "34 Track34",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/34 Track34.wav",
+                    "duration": "01:15"
+                },
+                {
+                    "track_number": 35,
+                    "title": "35 Track35",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/35 Track35.wav",
+                    "duration": "01:01"
+                },
+                {
+                    "track_number": 36,
+                    "title": "36 Track36",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/36 Track36.wav",
+                    "duration": "02:39"
+                },
+                {
+                    "track_number": 37,
+                    "title": "37 Track37",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/37 Track37.wav",
+                    "duration": "00:55"
+                },
+                {
+                    "track_number": 38,
+                    "title": "38 Track38",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/38 Track38.wav",
+                    "duration": "00:56"
+                },
+                {
+                    "track_number": 39,
+                    "title": "39 Track39",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/39 Track39.wav",
+                    "duration": "00:58"
+                },
+                {
+                    "track_number": 40,
+                    "title": "40 Track40",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/40 Track40.wav",
+                    "duration": "08:05"
+                },
+                {
+                    "track_number": 41,
+                    "title": "41 Track41",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/HabilidadesAuditivas/41 Track41.wav",
+                    "duration": "08:00"
+                }
+            ]
+        },
+        {
+            "id": "JogandoComOsSons",
+            "title": "Jogandocomossons",
+            "description": "Exercícios e faixas de áudio do CD Jogandocomossons.",
+            "cover_url": "",
+            "tracks": [
+                {
+                    "track_number": 1,
+                    "title": "01 Track01",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/01 Track01.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 2,
+                    "title": "02 Track02",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/02 Track02.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 3,
+                    "title": "03 Track03",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/03 Track03.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 4,
+                    "title": "04 Track04",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/04 Track04.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 5,
+                    "title": "05 Track05",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/05 Track05.wav",
+                    "duration": "00:08"
+                },
+                {
+                    "track_number": 6,
+                    "title": "06 Track06",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/06 Track06.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 7,
+                    "title": "07 Track07",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/07 Track07.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 8,
+                    "title": "08 Track08",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/08 Track08.wav",
+                    "duration": "00:12"
+                },
+                {
+                    "track_number": 9,
+                    "title": "09 Track09",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/09 Track09.wav",
+                    "duration": "00:16"
+                },
+                {
+                    "track_number": 10,
+                    "title": "10 Track10",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/10 Track10.wav",
+                    "duration": "00:08"
+                },
+                {
+                    "track_number": 11,
+                    "title": "11 Track11",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/11 Track11.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 12,
+                    "title": "12 Track12",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/12 Track12.wav",
+                    "duration": "00:13"
+                },
+                {
+                    "track_number": 13,
+                    "title": "13 Track13",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/13 Track13.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 14,
+                    "title": "14 Track14",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/14 Track14.wav",
+                    "duration": "00:13"
+                },
+                {
+                    "track_number": 15,
+                    "title": "15 Track15",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/15 Track15.wav",
+                    "duration": "00:16"
+                },
+                {
+                    "track_number": 16,
+                    "title": "16 Track16",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/16 Track16.wav",
+                    "duration": "00:06"
+                },
+                {
+                    "track_number": 17,
+                    "title": "17 Track17",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/17 Track17.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 18,
+                    "title": "18 Track18",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/18 Track18.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 19,
+                    "title": "19 Track19",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/19 Track19.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 20,
+                    "title": "20 Track20",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/20 Track20.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 21,
+                    "title": "21 Track21",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/21 Track21.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 22,
+                    "title": "22 Track22",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/22 Track22.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 23,
+                    "title": "23 Track23",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/23 Track23.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 24,
+                    "title": "24 Track24",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/24 Track24.wav",
+                    "duration": "00:17"
+                },
+                {
+                    "track_number": 25,
+                    "title": "25 Track25",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/25 Track25.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 26,
+                    "title": "26 Track26",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/26 Track26.wav",
+                    "duration": "00:17"
+                },
+                {
+                    "track_number": 27,
+                    "title": "27 Track27",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/27 Track27.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 28,
+                    "title": "28 Track28",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/28 Track28.wav",
+                    "duration": "00:10"
+                },
+                {
+                    "track_number": 29,
+                    "title": "29 Track29",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/29 Track29.wav",
+                    "duration": "00:21"
+                },
+                {
+                    "track_number": 30,
+                    "title": "30 Track30",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/30 Track30.wav",
+                    "duration": "00:18"
+                },
+                {
+                    "track_number": 31,
+                    "title": "31 Track31",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/31 Track31.wav",
+                    "duration": "00:28"
+                },
+                {
+                    "track_number": 32,
+                    "title": "32 Track32",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/32 Track32.wav",
+                    "duration": "00:23"
+                },
+                {
+                    "track_number": 33,
+                    "title": "33 Track33",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/33 Track33.wav",
+                    "duration": "00:25"
+                },
+                {
+                    "track_number": 34,
+                    "title": "34 Track34",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/34 Track34.wav",
+                    "duration": "00:14"
+                },
+                {
+                    "track_number": 35,
+                    "title": "35 Track35",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/35 Track35.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 36,
+                    "title": "36 Track36",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/36 Track36.wav",
+                    "duration": "00:42"
+                },
+                {
+                    "track_number": 37,
+                    "title": "37 Track37",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/37 Track37.wav",
+                    "duration": "00:12"
+                },
+                {
+                    "track_number": 38,
+                    "title": "38 Track38",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/38 Track38.wav",
+                    "duration": "00:13"
+                },
+                {
+                    "track_number": 39,
+                    "title": "39 Track39",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/39 Track39.wav",
+                    "duration": "00:10"
+                },
+                {
+                    "track_number": 40,
+                    "title": "40 Track40",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/40 Track40.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 41,
+                    "title": "41 Track41",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/41 Track41.wav",
+                    "duration": "00:13"
+                },
+                {
+                    "track_number": 42,
+                    "title": "42 Track42",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/42 Track42.wav",
+                    "duration": "00:08"
+                },
+                {
+                    "track_number": 43,
+                    "title": "43 Track43",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/43 Track43.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 44,
+                    "title": "44 Track44",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/44 Track44.wav",
+                    "duration": "00:10"
+                },
+                {
+                    "track_number": 45,
+                    "title": "45 Track45",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/45 Track45.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 46,
+                    "title": "46 Track46",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/46 Track46.wav",
+                    "duration": "00:06"
+                },
+                {
+                    "track_number": 47,
+                    "title": "47 Track47",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/47 Track47.wav",
+                    "duration": "00:10"
+                },
+                {
+                    "track_number": 48,
+                    "title": "48 Track48",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/48 Track48.wav",
+                    "duration": "00:10"
+                },
+                {
+                    "track_number": 49,
+                    "title": "49 Track49",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/49 Track49.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 50,
+                    "title": "50 Track50",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/50 Track50.wav",
+                    "duration": "00:10"
+                },
+                {
+                    "track_number": 51,
+                    "title": "51 Track51",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/51 Track51.wav",
+                    "duration": "00:12"
+                },
+                {
+                    "track_number": 52,
+                    "title": "52 Track52",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/52 Track52.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 53,
+                    "title": "53 Track53",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/53 Track53.wav",
+                    "duration": "00:13"
+                },
+                {
+                    "track_number": 54,
+                    "title": "54 Track54",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/54 Track54.wav",
+                    "duration": "00:06"
+                },
+                {
+                    "track_number": 55,
+                    "title": "55 Track55",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/55 Track55.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 56,
+                    "title": "56 Track56",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/56 Track56.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 57,
+                    "title": "57 Track57",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/57 Track57.wav",
+                    "duration": "00:13"
+                },
+                {
+                    "track_number": 58,
+                    "title": "58 Track58",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/58 Track58.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 59,
+                    "title": "59 Track59",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/59 Track59.wav",
+                    "duration": "00:12"
+                },
+                {
+                    "track_number": 60,
+                    "title": "60 Track60",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/60 Track60.wav",
+                    "duration": "00:13"
+                },
+                {
+                    "track_number": 61,
+                    "title": "61 Track61",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/61 Track61.wav",
+                    "duration": "00:16"
+                },
+                {
+                    "track_number": 62,
+                    "title": "62 Track62",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/62 Track62.wav",
+                    "duration": "00:14"
+                },
+                {
+                    "track_number": 63,
+                    "title": "63 Track63",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/63 Track63.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 64,
+                    "title": "64 Track64",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/64 Track64.wav",
+                    "duration": "00:06"
+                },
+                {
+                    "track_number": 65,
+                    "title": "65 Track65",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/65 Track65.wav",
+                    "duration": "00:23"
+                },
+                {
+                    "track_number": 66,
+                    "title": "66 Track66",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/66 Track66.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 67,
+                    "title": "67 Track67",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/67 Track67.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 68,
+                    "title": "68 Track68",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/68 Track68.wav",
+                    "duration": "00:41"
+                },
+                {
+                    "track_number": 69,
+                    "title": "69 Track69",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/69 Track69.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 70,
+                    "title": "70 Track70",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/70 Track70.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 71,
+                    "title": "71 Track71",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/71 Track71.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 72,
+                    "title": "72 Track72",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/72 Track72.wav",
+                    "duration": "00:12"
+                },
+                {
+                    "track_number": 73,
+                    "title": "73 Track73",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/73 Track73.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 74,
+                    "title": "74 Track74",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/74 Track74.wav",
+                    "duration": "00:12"
+                },
+                {
+                    "track_number": 75,
+                    "title": "75 Track75",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/75 Track75.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 76,
+                    "title": "76 Track76",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/76 Track76.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 77,
+                    "title": "77 Track77",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/77 Track77.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 78,
+                    "title": "78 Track78",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/78 Track78.wav",
+                    "duration": "00:21"
+                },
+                {
+                    "track_number": 79,
+                    "title": "79 Track79",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/79 Track79.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 80,
+                    "title": "80 Track80",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/80 Track80.wav",
+                    "duration": "00:10"
+                },
+                {
+                    "track_number": 81,
+                    "title": "81 Track81",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/81 Track81.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 82,
+                    "title": "82 Track82",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/82 Track82.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 83,
+                    "title": "83 Track83",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/83 Track83.wav",
+                    "duration": "00:17"
+                },
+                {
+                    "track_number": 84,
+                    "title": "84 Track84",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/84 Track84.wav",
+                    "duration": "00:10"
+                },
+                {
+                    "track_number": 85,
+                    "title": "85 Track85",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/85 Track85.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 86,
+                    "title": "86 Track86",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/86 Track86.wav",
+                    "duration": "00:08"
+                },
+                {
+                    "track_number": 87,
+                    "title": "87 Track87",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/87 Track87.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 88,
+                    "title": "88 Track88",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/88 Track88.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 89,
+                    "title": "89 Track89",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/89 Track89.wav",
+                    "duration": "00:07"
+                },
+                {
+                    "track_number": 90,
+                    "title": "90 Track90",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/90 Track90.wav",
+                    "duration": "00:12"
+                },
+                {
+                    "track_number": 91,
+                    "title": "91 Track91",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/91 Track91.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 92,
+                    "title": "92 Track92",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/92 Track92.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 93,
+                    "title": "93 Track93",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/93 Track93.wav",
+                    "duration": "00:15"
+                },
+                {
+                    "track_number": 94,
+                    "title": "94 Track94",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/JogandoComOsSons/94 Track94.wav",
+                    "duration": "00:07"
+                }
+            ]
+        },
+        {
+            "id": "MeninoComFones",
+            "title": "Meninocomfones",
+            "description": "Exercícios e faixas de áudio do CD Meninocomfones.",
+            "cover_url": "",
+            "tracks": [
+                {
+                    "track_number": 1,
+                    "title": "01 Track01",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/01 Track01.wav",
+                    "duration": "02:17"
+                },
+                {
+                    "track_number": 2,
+                    "title": "02 Track02",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/02 Track02.wav",
+                    "duration": "02:09"
+                },
+                {
+                    "track_number": 3,
+                    "title": "03 Track03",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/03 Track03.wav",
+                    "duration": "02:16"
+                },
+                {
+                    "track_number": 4,
+                    "title": "04 Track04",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/04 Track04.wav",
+                    "duration": "02:15"
+                },
+                {
+                    "track_number": 5,
+                    "title": "05 Track05",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/05 Track05.wav",
+                    "duration": "01:17"
+                },
+                {
+                    "track_number": 6,
+                    "title": "06 Track06",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/06 Track06.wav",
+                    "duration": "01:11"
+                },
+                {
+                    "track_number": 7,
+                    "title": "07 Track07",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/07 Track07.wav",
+                    "duration": "03:38"
+                },
+                {
+                    "track_number": 8,
+                    "title": "08 Track08",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/08 Track08.wav",
+                    "duration": "03:27"
+                },
+                {
+                    "track_number": 9,
+                    "title": "09 Track09",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/09 Track09.wav",
+                    "duration": "03:30"
+                },
+                {
+                    "track_number": 10,
+                    "title": "10 Track10",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/10 Track10.wav",
+                    "duration": "03:30"
+                },
+                {
+                    "track_number": 11,
+                    "title": "11 Track11",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/11 Track11.wav",
+                    "duration": "02:26"
+                },
+                {
+                    "track_number": 12,
+                    "title": "12 Track12",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/12 Track12.wav",
+                    "duration": "02:22"
+                },
+                {
+                    "track_number": 13,
+                    "title": "13 Track13",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/13 Track13.wav",
+                    "duration": "02:22"
+                },
+                {
+                    "track_number": 14,
+                    "title": "14 Track14",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/14 Track14.wav",
+                    "duration": "01:30"
+                },
+                {
+                    "track_number": 15,
+                    "title": "15 Track15",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/15 Track15.wav",
+                    "duration": "01:23"
+                },
+                {
+                    "track_number": 16,
+                    "title": "16 Track16",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/16 Track16.wav",
+                    "duration": "01:23"
+                },
+                {
+                    "track_number": 17,
+                    "title": "17 Track17",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/17 Track17.wav",
+                    "duration": "06:02"
+                },
+                {
+                    "track_number": 18,
+                    "title": "18 Track18",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/18 Track18.wav",
+                    "duration": "02:24"
+                },
+                {
+                    "track_number": 19,
+                    "title": "19 Track19",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/19 Track19.wav",
+                    "duration": "02:16"
+                },
+                {
+                    "track_number": 20,
+                    "title": "20 Track20",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/20 Track20.wav",
+                    "duration": "02:16"
+                },
+                {
+                    "track_number": 21,
+                    "title": "21 Track21",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/21 Track21.wav",
+                    "duration": "02:16"
+                },
+                {
+                    "track_number": 22,
+                    "title": "22 Track22",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/22 Track22.wav",
+                    "duration": "00:11"
+                },
+                {
+                    "track_number": 23,
+                    "title": "23 Track23",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/23 Track23.wav",
+                    "duration": "00:32"
+                },
+                {
+                    "track_number": 24,
+                    "title": "24 Track24",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/24 Track24.wav",
+                    "duration": "02:13"
+                },
+                {
+                    "track_number": 25,
+                    "title": "25 Track25",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/25 Track25.wav",
+                    "duration": "02:13"
+                },
+                {
+                    "track_number": 26,
+                    "title": "26 Track26",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/26 Track26.wav",
+                    "duration": "02:13"
+                },
+                {
+                    "track_number": 27,
+                    "title": "27 Track27",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/27 Track27.wav",
+                    "duration": "00:09"
+                },
+                {
+                    "track_number": 28,
+                    "title": "28 Track28",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/28 Track28.wav",
+                    "duration": "01:38"
+                },
+                {
+                    "track_number": 29,
+                    "title": "29 Track29",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/29 Track29.wav",
+                    "duration": "04:02"
+                },
+                {
+                    "track_number": 30,
+                    "title": "30 Track30",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/MeninoComFones/30 Track30.wav",
+                    "duration": "04:00"
+                }
+            ]
+        },
+        {
+            "id": "ProcessandoSons",
+            "title": "Processandosons",
+            "description": "Exercícios e faixas de áudio do CD Processandosons.",
+            "cover_url": "",
+            "tracks": [
+                {
+                    "track_number": 1,
+                    "title": "01 Track01",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/01 Track01.wav",
+                    "duration": "01:51"
+                },
+                {
+                    "track_number": 2,
+                    "title": "02 Track02",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/02 Track02.wav",
+                    "duration": "02:19"
+                },
+                {
+                    "track_number": 3,
+                    "title": "03 Track03",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/03 Track03.wav",
+                    "duration": "02:25"
+                },
+                {
+                    "track_number": 4,
+                    "title": "04 Track04",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/04 Track04.wav",
+                    "duration": "03:24"
+                },
+                {
+                    "track_number": 5,
+                    "title": "05 Track05",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/05 Track05.wav",
+                    "duration": "02:57"
+                },
+                {
+                    "track_number": 6,
+                    "title": "06 Track06",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/06 Track06.wav",
+                    "duration": "01:17"
+                },
+                {
+                    "track_number": 7,
+                    "title": "07 Track07",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/07 Track07.wav",
+                    "duration": "01:34"
+                },
+                {
+                    "track_number": 8,
+                    "title": "08 Track08",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/08 Track08.wav",
+                    "duration": "02:19"
+                },
+                {
+                    "track_number": 9,
+                    "title": "09 Track09",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/09 Track09.wav",
+                    "duration": "01:02"
+                },
+                {
+                    "track_number": 10,
+                    "title": "10 Track10",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/10 Track10.wav",
+                    "duration": "01:54"
+                },
+                {
+                    "track_number": 11,
+                    "title": "11 Track11",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/11 Track11.wav",
+                    "duration": "01:47"
+                },
+                {
+                    "track_number": 12,
+                    "title": "12 Track12",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/12 Track12.wav",
+                    "duration": "02:11"
+                },
+                {
+                    "track_number": 13,
+                    "title": "13 Track13",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/13 Track13.wav",
+                    "duration": "01:13"
+                },
+                {
+                    "track_number": 14,
+                    "title": "14 Track14",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/14 Track14.wav",
+                    "duration": "01:46"
+                },
+                {
+                    "track_number": 15,
+                    "title": "15 Track15",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/15 Track15.wav",
+                    "duration": "01:41"
+                },
+                {
+                    "track_number": 16,
+                    "title": "16 Track16",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/16 Track16.wav",
+                    "duration": "02:01"
+                },
+                {
+                    "track_number": 17,
+                    "title": "17 Track17",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/17 Track17.wav",
+                    "duration": "02:10"
+                },
+                {
+                    "track_number": 18,
+                    "title": "18 Track18",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/18 Track18.wav",
+                    "duration": "02:03"
+                },
+                {
+                    "track_number": 19,
+                    "title": "19 Track19",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/19 Track19.wav",
+                    "duration": "01:44"
+                },
+                {
+                    "track_number": 20,
+                    "title": "20 Track20",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/20 Track20.wav",
+                    "duration": "00:52"
+                },
+                {
+                    "track_number": 21,
+                    "title": "21 Track21",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/21 Track21.wav",
+                    "duration": "01:11"
+                },
+                {
+                    "track_number": 22,
+                    "title": "22 Track22",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/22 Track22.wav",
+                    "duration": "01:02"
+                },
+                {
+                    "track_number": 23,
+                    "title": "23 Track23",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/23 Track23.wav",
+                    "duration": "00:51"
+                },
+                {
+                    "track_number": 24,
+                    "title": "24 Track24",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/24 Track24.wav",
+                    "duration": "01:21"
+                },
+                {
+                    "track_number": 25,
+                    "title": "25 Track25",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/25 Track25.wav",
+                    "duration": "01:25"
+                },
+                {
+                    "track_number": 26,
+                    "title": "26 Track26",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/26 Track26.wav",
+                    "duration": "00:46"
+                },
+                {
+                    "track_number": 27,
+                    "title": "27 Track27",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/27 Track27.wav",
+                    "duration": "00:51"
+                },
+                {
+                    "track_number": 28,
+                    "title": "28 Track28",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/28 Track28.wav",
+                    "duration": "01:26"
+                },
+                {
+                    "track_number": 29,
+                    "title": "29 Track29",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/ProcessandoSons/29 Track29.wav",
+                    "duration": "01:24"
+                }
+            ]
+        },
+        {
+            "id": "disturbio_do_processamento_auditivo_o_que",
+            "title": "Disturbio Do Processamento Auditivo O Que",
+            "description": "Exercícios e faixas de áudio do CD Disturbio Do Processamento Auditivo O Que.",
+            "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/cover.jpg",
+            "tracks": [
+                {
+                    "track_number": 1,
+                    "title": "01 Track01",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/01 Track01.wav",
+                    "duration": "05:01"
+                },
+                {
+                    "track_number": 2,
+                    "title": "02 Track02",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/02 Track02.wav",
+                    "duration": "02:29"
+                },
+                {
+                    "track_number": 3,
+                    "title": "03 Track03",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/03 Track03.wav",
+                    "duration": "02:13"
+                },
+                {
+                    "track_number": 4,
+                    "title": "04 Track04",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/04 Track04.wav",
+                    "duration": "04:35"
+                },
+                {
+                    "track_number": 5,
+                    "title": "05 Track05",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/05 Track05.wav",
+                    "duration": "03:01"
+                },
+                {
+                    "track_number": 6,
+                    "title": "06 Track06",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/06 Track06.wav",
+                    "duration": "02:40"
+                },
+                {
+                    "track_number": 7,
+                    "title": "07 Track07",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/07 Track07.wav",
+                    "duration": "01:31"
+                },
+                {
+                    "track_number": 8,
+                    "title": "08 Track08",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/08 Track08.wav",
+                    "duration": "03:51"
+                },
+                {
+                    "track_number": 9,
+                    "title": "09 Track09",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/09 Track09.wav",
+                    "duration": "02:17"
+                },
+                {
+                    "track_number": 10,
+                    "title": "10 Track10",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/10 Track10.wav",
+                    "duration": "03:36"
+                },
+                {
+                    "track_number": 11,
+                    "title": "11 Track11",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/11 Track11.wav",
+                    "duration": "02:20"
+                },
+                {
+                    "track_number": 12,
+                    "title": "12 Track12",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/12 Track12.wav",
+                    "duration": "03:41"
+                },
+                {
+                    "track_number": 13,
+                    "title": "13 Track13",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/13 Track13.wav",
+                    "duration": "02:43"
+                },
+                {
+                    "track_number": 14,
+                    "title": "14 Track14",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/14 Track14.wav",
+                    "duration": "02:35"
+                },
+                {
+                    "track_number": 15,
+                    "title": "15 Track15",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/15 Track15.wav",
+                    "duration": "02:53"
+                },
+                {
+                    "track_number": 16,
+                    "title": "16 Track16",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/16 Track16.wav",
+                    "duration": "02:03"
+                },
+                {
+                    "track_number": 17,
+                    "title": "17 Track17",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/17 Track17.wav",
+                    "duration": "02:18"
+                },
+                {
+                    "track_number": 18,
+                    "title": "18 Track18",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/18 Track18.wav",
+                    "duration": "03:15"
+                },
+                {
+                    "track_number": 19,
+                    "title": "19 Track19",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/19 Track19.wav",
+                    "duration": "03:53"
+                },
+                {
+                    "track_number": 20,
+                    "title": "20 Track20",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/disturbio_do_processamento_auditivo_o_que/20 Track20.wav",
+                    "duration": "05:05"
+                }
+            ]
+        },
+        {
+            "id": "escuta_o_1",
+            "title": "Escuta O 1",
+            "description": "Exercícios e faixas de áudio do CD Escuta O 1.",
+            "cover_url": "",
+            "tracks": [
+                {
+                    "track_number": 1,
+                    "title": "01 Track01",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/01 Track01.wav",
+                    "duration": "01:18"
+                },
+                {
+                    "track_number": 2,
+                    "title": "02 Track02",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/02 Track02.wav",
+                    "duration": "01:11"
+                },
+                {
+                    "track_number": 3,
+                    "title": "03 Track03",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/03 Track03.wav",
+                    "duration": "01:18"
+                },
+                {
+                    "track_number": 4,
+                    "title": "04 Track04",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/04 Track04.wav",
+                    "duration": "01:15"
+                },
+                {
+                    "track_number": 5,
+                    "title": "05 Track05",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/05 Track05.wav",
+                    "duration": "01:11"
+                },
+                {
+                    "track_number": 6,
+                    "title": "06 Track06",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/06 Track06.wav",
+                    "duration": "01:09"
+                },
+                {
+                    "track_number": 7,
+                    "title": "07 Track07",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/07 Track07.wav",
+                    "duration": "01:13"
+                },
+                {
+                    "track_number": 8,
+                    "title": "08 Track08",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/08 Track08.wav",
+                    "duration": "01:10"
+                },
+                {
+                    "track_number": 9,
+                    "title": "09 Track09",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/09 Track09.wav",
+                    "duration": "01:37"
+                },
+                {
+                    "track_number": 10,
+                    "title": "10 Track10",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/10 Track10.wav",
+                    "duration": "01:41"
+                },
+                {
+                    "track_number": 11,
+                    "title": "11 Track11",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/11 Track11.wav",
+                    "duration": "01:39"
+                },
+                {
+                    "track_number": 12,
+                    "title": "12 Track12",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/12 Track12.wav",
+                    "duration": "01:35"
+                },
+                {
+                    "track_number": 13,
+                    "title": "13 Track13",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/13 Track13.wav",
+                    "duration": "01:27"
+                },
+                {
+                    "track_number": 14,
+                    "title": "14 Track14",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/14 Track14.wav",
+                    "duration": "01:27"
+                },
+                {
+                    "track_number": 15,
+                    "title": "15 Track15",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/15 Track15.wav",
+                    "duration": "01:27"
+                },
+                {
+                    "track_number": 16,
+                    "title": "16 Track16",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/16 Track16.wav",
+                    "duration": "01:29"
+                },
+                {
+                    "track_number": 17,
+                    "title": "17 Track17",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/17 Track17.wav",
+                    "duration": "01:31"
+                },
+                {
+                    "track_number": 18,
+                    "title": "18 Track18",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/18 Track18.wav",
+                    "duration": "01:38"
+                },
+                {
+                    "track_number": 19,
+                    "title": "19 Track19",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/19 Track19.wav",
+                    "duration": "01:31"
+                },
+                {
+                    "track_number": 20,
+                    "title": "20 Track20",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/20 Track20.wav",
+                    "duration": "01:39"
+                },
+                {
+                    "track_number": 21,
+                    "title": "21 Track21",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/21 Track21.wav",
+                    "duration": "01:10"
+                },
+                {
+                    "track_number": 22,
+                    "title": "22 Track22",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/22 Track22.wav",
+                    "duration": "01:10"
+                },
+                {
+                    "track_number": 23,
+                    "title": "23 Track23",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/23 Track23.wav",
+                    "duration": "01:10"
+                },
+                {
+                    "track_number": 24,
+                    "title": "24 Track24",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/24 Track24.wav",
+                    "duration": "01:10"
+                },
+                {
+                    "track_number": 25,
+                    "title": "25 Track25",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/25 Track25.wav",
+                    "duration": "01:12"
+                },
+                {
+                    "track_number": 26,
+                    "title": "26 Track26",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/26 Track26.wav",
+                    "duration": "01:12"
+                },
+                {
+                    "track_number": 27,
+                    "title": "27 Track27",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/27 Track27.wav",
+                    "duration": "01:12"
+                },
+                {
+                    "track_number": 28,
+                    "title": "28 Track28",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/28 Track28.wav",
+                    "duration": "01:12"
+                },
+                {
+                    "track_number": 29,
+                    "title": "29 Track29",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/29 Track29.wav",
+                    "duration": "01:12"
+                },
+                {
+                    "track_number": 30,
+                    "title": "30 Track30",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/30 Track30.wav",
+                    "duration": "01:12"
+                },
+                {
+                    "track_number": 31,
+                    "title": "31 Track31",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/31 Track31.wav",
+                    "duration": "01:12"
+                },
+                {
+                    "track_number": 32,
+                    "title": "32 Track32",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/32 Track32.wav",
+                    "duration": "01:14"
+                },
+                {
+                    "track_number": 33,
+                    "title": "33 Track33",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/33 Track33.wav",
+                    "duration": "01:00"
+                },
+                {
+                    "track_number": 34,
+                    "title": "34 Track34",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/34 Track34.wav",
+                    "duration": "01:13"
+                },
+                {
+                    "track_number": 35,
+                    "title": "35 Track35",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/35 Track35.wav",
+                    "duration": "01:17"
+                },
+                {
+                    "track_number": 36,
+                    "title": "36 Track36",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/36 Track36.wav",
+                    "duration": "01:29"
+                },
+                {
+                    "track_number": 37,
+                    "title": "37 Track37",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/37 Track37.wav",
+                    "duration": "01:11"
+                },
+                {
+                    "track_number": 38,
+                    "title": "38 Track38",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/38 Track38.wav",
+                    "duration": "01:30"
+                },
+                {
+                    "track_number": 39,
+                    "title": "39 Track39",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/39 Track39.wav",
+                    "duration": "01:32"
+                },
+                {
+                    "track_number": 40,
+                    "title": "40 Track40",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/40 Track40.wav",
+                    "duration": "01:58"
+                },
+                {
+                    "track_number": 41,
+                    "title": "41 Track41",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/41 Track41.wav",
+                    "duration": "02:13"
+                },
+                {
+                    "track_number": 42,
+                    "title": "42 Track42",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/42 Track42.wav",
+                    "duration": "01:36"
+                },
+                {
+                    "track_number": 43,
+                    "title": "43 Track43",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/43 Track43.wav",
+                    "duration": "01:36"
+                },
+                {
+                    "track_number": 44,
+                    "title": "44 Track44",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/44 Track44.wav",
+                    "duration": "01:46"
+                },
+                {
+                    "track_number": 45,
+                    "title": "45 Track45",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escuta_o_1/45 Track45.wav",
+                    "duration": "02:33"
+                }
+            ]
+        },
+        {
+            "id": "escutacao_2",
+            "title": "Escutacao 2",
+            "description": "Exercícios e faixas de áudio do CD Escutacao 2.",
+            "cover_url": "",
+            "tracks": [
+                {
+                    "track_number": 1,
+                    "title": "01 Track01",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/01 Track01.wav",
+                    "duration": "00:41"
+                },
+                {
+                    "track_number": 2,
+                    "title": "02 Track02",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/02 Track02.wav",
+                    "duration": "00:43"
+                },
+                {
+                    "track_number": 3,
+                    "title": "03 Track03",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/03 Track03.wav",
+                    "duration": "00:42"
+                },
+                {
+                    "track_number": 4,
+                    "title": "04 Track04",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/04 Track04.wav",
+                    "duration": "00:43"
+                },
+                {
+                    "track_number": 5,
+                    "title": "05 Track05",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/05 Track05.wav",
+                    "duration": "00:42"
+                },
+                {
+                    "track_number": 6,
+                    "title": "06 Track06",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/06 Track06.wav",
+                    "duration": "00:41"
+                },
+                {
+                    "track_number": 7,
+                    "title": "07 Track07",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/07 Track07.wav",
+                    "duration": "00:43"
+                },
+                {
+                    "track_number": 8,
+                    "title": "08 Track08",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/08 Track08.wav",
+                    "duration": "00:43"
+                },
+                {
+                    "track_number": 9,
+                    "title": "09 Track09",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/09 Track09.wav",
+                    "duration": "01:24"
+                },
+                {
+                    "track_number": 10,
+                    "title": "10 Track10",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/10 Track10.wav",
+                    "duration": "01:23"
+                },
+                {
+                    "track_number": 11,
+                    "title": "11 Track11",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/11 Track11.wav",
+                    "duration": "01:25"
+                },
+                {
+                    "track_number": 12,
+                    "title": "12 Track12",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/12 Track12.wav",
+                    "duration": "01:24"
+                },
+                {
+                    "track_number": 13,
+                    "title": "13 Track13",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/13 Track13.wav",
+                    "duration": "01:23"
+                },
+                {
+                    "track_number": 14,
+                    "title": "14 Track14",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/14 Track14.wav",
+                    "duration": "01:18"
+                },
+                {
+                    "track_number": 15,
+                    "title": "15 Track15",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/15 Track15.wav",
+                    "duration": "01:29"
+                },
+                {
+                    "track_number": 16,
+                    "title": "16 Track16",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/16 Track16.wav",
+                    "duration": "01:36"
+                },
+                {
+                    "track_number": 17,
+                    "title": "17 Track17",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/17 Track17.wav",
+                    "duration": "03:05"
+                },
+                {
+                    "track_number": 18,
+                    "title": "18 Track18",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/18 Track18.wav",
+                    "duration": "02:50"
+                },
+                {
+                    "track_number": 19,
+                    "title": "19 Track19",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/19 Track19.wav",
+                    "duration": "05:43"
+                },
+                {
+                    "track_number": 20,
+                    "title": "20 Track20",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/20 Track20.wav",
+                    "duration": "01:59"
+                },
+                {
+                    "track_number": 21,
+                    "title": "21 Track21",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/21 Track21.wav",
+                    "duration": "01:42"
+                },
+                {
+                    "track_number": 22,
+                    "title": "22 Track22",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/22 Track22.wav",
+                    "duration": "01:31"
+                },
+                {
+                    "track_number": 23,
+                    "title": "23 Track23",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/23 Track23.wav",
+                    "duration": "02:24"
+                },
+                {
+                    "track_number": 24,
+                    "title": "24 Track24",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/24 Track24.wav",
+                    "duration": "01:50"
+                },
+                {
+                    "track_number": 25,
+                    "title": "25 Track25",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/25 Track25.wav",
+                    "duration": "02:07"
+                },
+                {
+                    "track_number": 26,
+                    "title": "26 Track26",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/26 Track26.wav",
+                    "duration": "01:56"
+                },
+                {
+                    "track_number": 27,
+                    "title": "27 Track27",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/27 Track27.wav",
+                    "duration": "01:08"
+                },
+                {
+                    "track_number": 28,
+                    "title": "28 Track28",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/28 Track28.wav",
+                    "duration": "03:21"
+                },
+                {
+                    "track_number": 29,
+                    "title": "29 Track29",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/29 Track29.wav",
+                    "duration": "03:20"
+                },
+                {
+                    "track_number": 30,
+                    "title": "30 Track30",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/30 Track30.wav",
+                    "duration": "03:19"
+                },
+                {
+                    "track_number": 31,
+                    "title": "31 Track31",
+                    "url": "https://raw.githubusercontent.com/gustavo0070000/fonoApp/main/Cds/escutacao_2/31 Track31.wav",
+                    "duration": "03:17"
+                }
+            ]
+        },
+        {
             "id": "escutando_com_interferentes",
             "title": "Escutando Com Interferentes",
             "description": "Exercícios e faixas de áudio do CD Escutando Com Interferentes.",
