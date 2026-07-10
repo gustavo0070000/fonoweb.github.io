@@ -1020,7 +1020,7 @@
             "id": "ProcessandoSons",
             "title": "Processandosons",
             "description": "Exercícios e faixas de áudio do CD Processandosons.",
-            "cover_url": "",
+            "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/ProcessandoSons/cover.jpg?t=1783687377671",
             "tracks": [
                 {
                     "track_number": 1,
