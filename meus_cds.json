@@ -1330,7 +1330,7 @@
             "id": "escuta_o_1",
             "title": "Escuta O 1",
             "description": "Exercícios e faixas de áudio do CD Escuta O 1.",
-            "cover_url": "",
+            "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/escuta_o_1/cover.jpg?t=1783687430335",
             "tracks": [
                 {
                     "track_number": 1,
