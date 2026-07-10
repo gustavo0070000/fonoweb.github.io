@@ -832,7 +832,7 @@
             "id": "MeninoComFones",
             "title": "Meninocomfones",
             "description": "Exercícios e faixas de áudio do CD Meninocomfones.",
-            "cover_url": "",
+            "cover_url": "https://raw.githubusercontent.com/gustavo0070000/fonoweb.github.io/main/Cds/MeninoComFones/cover.jpg?t=1783687345144",
             "tracks": [
                 {
                     "track_number": 1,
